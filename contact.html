@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Ahsanullah University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="faculties.html">FACULTIES</a></li>
+                    <li><a href="news.html">NEWS AND NOTICE</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONTACT</h1>
+    </section>
+
+    <!---------------------contact-------------------->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5387581242962!2d90.40448511490487!3d23.763821984582755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c77decb5f845%3A0xc2eadd2f3b867792!2sAhsanullah%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sbd!4v1675834351957!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>141 & 142, Love Road, Tejgaon Industrial Area</h5>
+                        <p>Dhaka-1208, Bangladesh</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>Vice-Chancellor's Office - 8870422 Ext. - 101</h5>
+                        <p>Registrar - 8870416</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@aust.edu, regr@aust.edu</h5>
+                        <p>Email us for more info</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post"><input type="text" name="name" placeholder="Enter your name" required></form>
+                <form action="form-handler.php" method="post"><input type="email" name="email" placeholder="Enter your email" required></form>
+                <form action="form-handler.php" method="post"><input type="text" name="subject" placeholder="Enter your subject" required></form>
+                <form action="form-handler.php" method="post"><textarea rows="8" name="message" placeholder="Message" required></textarea></form> 
+                <form action="form-handler.php" method="post"><button type="submit" class="hero-btn">Send Message</button></form>
+            </div>
+        </div>
+    </section>
+
+<section class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <h4>ABOUT AUST</h4>
+            <p><a href="index.html">At a glance</a></p>
+            <p><a href="index.html">Administration</a></p>
+            <p><a href="index.html">Campus</a></p>
+            <p><a href="admission.html">School & Departments</a></p>
+        </div>
+        <div class="footer-col">
+            <h4>ACADEMICS</h4>
+            <p><a href="news.html">Academic Calendar</a></p>
+            <p><a href="readmore.html">Rules & information</a></p>
+            <p><a href="achievements.html">Research & Publication</a></p>
+            <p><a href="readmore.html">Conferences</a></p>
+        </div>
+        <div class="footer-col">
+            <h4>ADMISSION</h4>
+            <p><a href="admission.html">Undergraduate</a></p>
+            <p><a href="admission.html">Graduate</a></p>
+            <p><a href="admission.html">Fees</a></p>
+            <p><a href="news.html">Notice</a></p>
+        </div>
+    </div>
+    <h4>Reach us</h4>
+    <p>141 & 142, Love Road, Tejgaon Industrial Area, Dhaka-1208.
+
+        Tel. (8802) 8870422, Ext. 107, 114, Fax : (8802) 8870418</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/AUST.BD/" ><i class="fa fa-facebook"></i></a>
+        <a href="https://www.aust.edu/contact"><i class="fa fa-envelope"></i></a>
+        <a href="https://twitter.com/AustAlumni"><i class="fa fa-twitter"></i></a>
+    </div>
+    <p>Made by Sonya Rahman<i class="fa fa-heart-o"></i></p>
+</section>
+
+<!---------javascript for toggle menu---------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+</body>
+
+</html>
